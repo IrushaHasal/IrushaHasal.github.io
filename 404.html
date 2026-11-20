@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting…</title>
+  <meta name="robots" content="noindex">
+  <script>
+    const base = "https://irushahasal--qbit-seedbox.ap-south.modal.direct";
+    const path = location.pathname;
+    if (path === "/qbit" || path.startsWith("/qbit/")) {
+      location.replace(base + path.slice("/qbit".length) + location.search + location.hash);
+    }
+  </script>
+</head>
+<body>
+  <p>Not found. <a href="/qbit/">Open qbit</a></p>
+</body>
+</html>
